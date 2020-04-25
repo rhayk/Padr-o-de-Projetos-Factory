@@ -1,4 +1,9 @@
+//triângulo isósceles -> dois dos lados iguais
+public class Isosceles extends Triangulo {
 
-public class Isosceles {
+	public  Isosceles() {
+		super(10.4, 10.4, 10.6 );
+		
+	}
 
 }

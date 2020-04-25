@@ -1,22 +1,74 @@
 // triângulo equilátero -> todos os lados iguais
 //triângulo isósceles -> dois dos lados iguais
 //triângulo escaleno -> todos os lados diferentes
-public class Triangulo {
+
+	public class Triangulo implements FiguraGeometricaBidimensional{
 	
-	private double ladoA;
-	private double ladoB;
-	private double ladoC;
+	private float ladoA;
+	private float ladoB;
+	private float ladoC;
 	
-	Triangulo(double ladoA, double ladoB, double ladoC){
-		this.ladoA =  ladoA;
-		this.ladoA =  ladoB;
-		this.ladoA =  ladoC;
+	//[b-c]< a && a < b + c;
+	private boolean condicaoExistencia(float a, float b, float c) {
+		return Math.abs(b - c) < a && a < b + c;
+	}
+	
+	Triangulo(double d, double e, double f){
+		this.ladoA =  1;
+		this.ladoB =  1;
+		this.ladoC =  1;
+	}
+	
+	
+	
+	
+	public float getLadoA() {
+		return ladoA;
+	}
+
+
+	public void setLadoA(float ladoA) {
+		if(condicaoExistencia(ladoA, ladoB, ladoC)) {
+		this.ladoA = ladoA;
+	}
+	}
+
+	public float getLadoB() {
+		return ladoB;
+	}
+
+
+	public void setLadoB(float ladoB) {
+	if(condicaoExistencia(ladoA, ladoB, ladoC)) {
+		this.ladoB = ladoB;
+	}
+	}
+
+	public float getLadoC() {
+		return ladoC;
+	}
+
+	
+	public void setLadoC(float ladoC) {
+		if(condicaoExistencia(ladoA, ladoB, ladoC)) {
+		this.ladoC = ladoC;
+	}
+
+	}
+
+	
+	@Override
+	public String getTipoFigura() {
+		//implementação dos triangulos
+		return "";
 	}
 	
 	@Override
 	public String toString() {
-		return this.ladoA+"  "+this.ladoB+"   "+this.ladoC;
+		return "["+this.ladoA+"  "+this.ladoB+"   "+this.ladoC+"]";
 	}
+
+	
 	
 
 }

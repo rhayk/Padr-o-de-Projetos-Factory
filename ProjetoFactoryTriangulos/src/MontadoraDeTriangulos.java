@@ -1,4 +1,9 @@
 
-public class MontadoraDeTriangulos {
 
+public interface MontadoraDeTriangulos {
+	
+	public Triangulo criarTriangulo(String tipoTriangulo);
+
+	
+	
 }
