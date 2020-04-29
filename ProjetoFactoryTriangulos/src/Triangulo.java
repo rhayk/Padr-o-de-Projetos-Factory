@@ -13,7 +13,7 @@
 		return Math.abs(b - c) < a && a < b + c;
 	}
 	
-	Triangulo(double d, double e, double f){
+	Triangulo(){
 		this.ladoA =  1;
 		this.ladoB =  1;
 		this.ladoC =  1;
@@ -27,10 +27,9 @@
 	}
 
 
-	public void setLadoA(float ladoA) {
-		if(condicaoExistencia(ladoA, ladoB, ladoC)) {
+	public void setLadoA(float ladoA) {	
 		this.ladoA = ladoA;
-	}
+	
 	}
 
 	public float getLadoB() {
@@ -39,9 +38,8 @@
 
 
 	public void setLadoB(float ladoB) {
-	if(condicaoExistencia(ladoA, ladoB, ladoC)) {
 		this.ladoB = ladoB;
-	}
+	
 	}
 
 	public float getLadoC() {
@@ -59,13 +57,13 @@
 	
 	@Override
 	public String getTipoFigura() {
-		if(ladoA == ladoB && ladoB == ladoC)
+		if(ladoA == ladoB && ladoB == ladoC) {
 			return "Equilátero";
-		else if(ladoA != ladoB && ladoB != ladoC && ladoC != ladoA)
+		}else if(ladoA != ladoB && ladoB != ladoC && ladoC != ladoA)
 			return "Escaleno";
-		else 
+		else {
 			return "Isósceles";
-	}
+	}}
 	
 	@Override
 	public String toString() {

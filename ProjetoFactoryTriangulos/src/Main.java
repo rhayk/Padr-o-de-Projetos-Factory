@@ -6,21 +6,28 @@ public class Main  extends Exception{
 
 	 public static void main (String [] args) {
 
-		 MontadoraDeTriangulos m;
+		 Triangulo teste = new Triangulo();
 		 
-		 m = new FabricaDeTriangulos();
+		 teste.setLadoA(2);  teste.setLadoB(3);  teste.setLadoC(4);
 		 
-		 Triangulo a;
-	
+		 System.out.println(teste.getTipoFigura());
 		 
-		 a = m.criarTriangulo("Escaleno");		 
-		 System.out.println(a);
 		 
-		 a = m.criarTriangulo("Isosceles");		 
-		 System.out.println(a);
-		 
-		 a = m.criarTriangulo("Equilatero");		 
-		 System.out.println(a);
+//		 MontadoraDeTriangulos m;
+//		 
+//		 m = new FabricaDeTriangulos();
+//		 
+//		 Triangulo a;
+//	
+//		 
+//		 a = m.criarTriangulo("Escaleno");		 
+//		 System.out.println(a);
+//		 
+//		 a = m.criarTriangulo("Isosceles");		 
+//		 System.out.println(a);
+//		 
+//		 a = m.criarTriangulo("Equilatero");		 
+//		 System.out.println(a);
 		 
 		 
 	 }
@@ -28,15 +35,3 @@ public class Main  extends Exception{
 
 		 }
 		
-//badMethod();
-//}
-//static void badMethod() { 		// No need to declare an Error
-//doStuff();
-//}
-//static void doStuff() throws Error{		// No need to declare an Error
-//try {
-//throw new Error();
-//}
-//catch(Error me) {
-//throw me;				 // We catch it, but then rethrow it
-//}

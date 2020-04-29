@@ -2,7 +2,7 @@
 public class Isosceles extends Triangulo {
 
 	public  Isosceles() {
-		super(10.4, 10.4, 10.6 );
+	//	super(10.4, 10.4, 10.6 );
 		
 	}
 
