@@ -59,8 +59,12 @@
 	
 	@Override
 	public String getTipoFigura() {
-		//implementação dos triangulos
-		return "";
+		if(ladoA == ladoB && ladoB == ladoC)
+			return "Equilátero";
+		else if(ladoA != ladoB && ladoB != ladoC && ladoC != ladoA)
+			return "Escaleno";
+		else 
+			return "Isósceles";
 	}
 	
 	@Override

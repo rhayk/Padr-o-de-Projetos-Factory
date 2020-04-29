@@ -2,7 +2,7 @@
 public class Equilatero extends Triangulo{
 
 	public  Equilatero() {
-		super(10.4, 10.4, 10.4 );
+		super(10.4, 10.4, 10.4);
 		
 	}
 }
